@@ -1,0 +1,195 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+}
+
+header {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.project {
+  margin-top: 15px;
+  padding: 15px;
+  border-left: 4px solid #007bff;
+  background: #fafafa;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+.nav-links a.active {
+  color: #393b3d;
+  font-weight: bold;
+}
+
+:root {
+  --bg: #f5f5f5;
+  --card: white;
+  --text: #111;
+}
+
+.dark {
+  --bg: #111;
+  --card: #1e1e1e;
+  --text: white;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+section,
+.navbar {
+  background: var(--card);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 70px;
+    right: 0;
+
+    width: 220px;
+
+    flex-direction: column;
+
+    background: white;
+
+    display: none;
+
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 0.7rem 2rem;
+}
+
+.profile-pic {
+  display: block;
+  width: 200px;
+  height: 200px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin: 20px auto;
+
+  border: 4px solid #393b3d;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.skills-list li {
+  background: #393b3d;
+  color: white;
+
+  padding: 8px 12px;
+
+  border-radius: 20px;
+}
+
+.project {
+  margin-top: 15px;
+  padding: 15px;
+
+  border-left: 4px solid #393b3d;
+
+  background: #fafafa;
+
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+
+  max-width: 700px;
+
+  display: block;
+
+  margin: 0 auto 15px;
+
+  border-radius: 8px;
+
+  object-fit: cover;
+}
