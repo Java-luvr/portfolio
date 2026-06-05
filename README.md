@@ -27,17 +27,7 @@ The purpose of this portfolio is to demonstrate my web development skills and se
 
 ## Screenshots
 
-### Home Page
-
-Insert screenshot here.
-
-### About Section
-
-Insert screenshot here.
-
-### Projects Section
-
-Insert screenshot here.
+![Home Page](imgs/homepage.png)
 
 ## Live Website
 
