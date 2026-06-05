@@ -31,7 +31,7 @@ The purpose of this portfolio is to demonstrate my web development skills and se
 
 ## Live Website
 
-[Portfolio Website][(https://Java-luvr.github.io/portfolio/)
+[Portfolio Website](https://Java-luvr.github.io/portfolio/)
 
 ## Author
 
